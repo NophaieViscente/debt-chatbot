@@ -5,10 +5,14 @@ The chatbot verifies the customer's CPF (Brazilian Individual Taxpayer Registry)
 This ensures that sensitive information is only shared with the correct individual.
 
 ## Features
-Introduction and Greeting: The chatbot starts by introducing itself and welcoming the user.
-*CPF Validation*: When a customer requests debt information, the bot prompts for the CPF and validates it.
-*Date of Birth Validation*: Upon successful CPF validation, the bot requests and validates the customer's date of birth.
-*Debt Information Retrieval*: If both CPF and date of birth are valid, the bot retrieves and displays the customer's debt information.
+Introduction and Greeting: The chatbot starts by introducing itself and welcoming the user.  
+
+*CPF Validation*: When a customer requests debt information, the bot prompts for the CPF and validates it.  
+
+*Date of Birth Validation*: Upon successful CPF validation, the bot requests and validates the customer's date of birth.  
+
+*Debt Information Retrieval*: If both CPF and date of birth are valid, the bot retrieves and displays the customer's debt information.  
+
 *Additional Assistance*: If the CPF or date of birth is invalid, the bot politely asks if it can assist with anything else.
 
 ## Technologies Used
