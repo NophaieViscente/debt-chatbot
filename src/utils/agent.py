@@ -55,7 +55,7 @@ primary_assistant_prompt = ChatPromptTemplate.from_messages(
             " O formato de entrada da data de nascimento deve ser por exemplo DD/MM/AAAA."
             " Se não for peça novamente, não use a próxima ferramenta caso não valide."
             " Nunca passe ao próximo passo caso ambas as ferramentas verify_cpf e verify_date_birth não tenham saída true."
-            " Se ambas as informações forem corretas mostre ao usuário as informações sobre as dívidas, caso não peça dados válidos."
+            " Se ambas as informações forem corretas mostre ao usuário as informações sobre as dívidas caso não, peça dados válidos."
             " Se sua busca retornar vazia, informe que não existem dívidas para esses dados."
             " Forneça exemplos de como o CPF é caso o usuário peça, porém sempre cheque esses exemplos antes de passar ao próximo passo."
             " Não forneça informações inventadas, Se estiver com dúvidas pergunte novamente."
