@@ -39,19 +39,33 @@ requirements.txt
 
 ## File Descriptions
 *src/*: Main directory containing the source code.
+
 *utils/*: Directory containing utility modules and helper scripts.
+
 *agent.py*: Implementation of the main chatbot agent.
+
 *clean_data.py*: Script for data cleaning.
+
 *graph.py*: Module for generating graphs.
+
 *load_data.py*: Script for loading data.
+
 *sql_handler.py*: Module for handling SQL operations to insert data on database.
+
 *state.py*: Manages the state of the chatbot.
+
 *tools.py*: Additional tools used by the project.
+
 *utilities.py*: General utility functions.
+
 *chatbot.py*: Main chatbot script.
+
 *create_database_from_excel.py*: Script for creating a database from an csv file.
+
 *.gitignore*: Specifies which files and directories to ignore in Git.
+
 *README.md*: This documentation file.
+
 *requirements.txt*: List of project dependencies.
 
 ## Getting Started
