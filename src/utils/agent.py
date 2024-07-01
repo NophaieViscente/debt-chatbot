@@ -5,7 +5,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import Runnable, RunnableConfig
 
 from utils.state import State
-from utils.tools import verify_cpf, verify_date_birth, verify_debt
+from utils.tools import verify_cpf, verify_date_birth, verify_debt, verify_plots
 
 
 # Appoint to enviroment variables
@@ -67,5 +67,5 @@ primary_assistant_prompt = ChatPromptTemplate.from_messages(
     ]
 )
 
-tools = [verify_cpf, verify_date_birth, verify_debt]
+tools = [verify_cpf, verify_date_birth, verify_debt, verify_plots]
 assistant_runnable = primary_assistant_prompt | llm.bind_tools(tools)
