@@ -17,6 +17,26 @@ Introduction and Greeting: The chatbot starts by introducing itself and welcomin
 *Langgraph: Utilized for manage flow and state conversation.
 *SQLite*: A lightweight database used for storing and retrieving customer data securely.
 
+## Project Structure
+```
+src/
+├── utils/
+│   ├── __pycache__/
+│   ├── agent.py
+│   ├── clean_data.py
+│   ├── graph.py
+│   ├── load_data.py
+│   ├── sql_handler.py
+│   ├── state.py
+│   ├── tools.py
+│   ├── utilities.py
+├── chatbot.py
+├── create_database_from_excel.py
+.gitignore
+README.md
+requirements.txt
+```
+
 ## Getting Started
 ### Prerequisites
 
