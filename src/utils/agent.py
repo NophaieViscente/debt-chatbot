@@ -20,9 +20,11 @@ class Assistant:
 
     def __call__(self, state: State, config: RunnableConfig):
         while True:
+            # Configuration to assistant
             configuration = config.get("configurable", {})
-            passenger_id = configuration.get("", None)
-            state = {**state, "user_info": passenger_id}
+            cpf = configuration.get("", None)
+            # Get state from before call
+            state = {**state, "user_info": cpf}
             result = self.runnable.invoke(state)
             # If the LLM happens to return an empty response, we will re-prompt it
             # for an actual response.
@@ -31,7 +33,9 @@ class Assistant:
                 or isinstance(result.content, list)
                 and not result.content[0].get("text")
             ):
-                messages = state["messages"] + [("user", "Respond with a real output.")]
+                messages = state["messages"] + [
+                    ("user", "Responda com uma saída real.")
+                ]
                 state = {**state, "messages": messages}
             else:
                 break
