@@ -19,7 +19,8 @@ Introduction and Greeting: The chatbot starts by introducing itself and welcomin
 
 #### Getting Started
 ##### Prerequisites
-Python 3.8 or higher
+\n
+Python 3.8 or higher\n
 SQLite
 #### Installation
 
