@@ -24,7 +24,35 @@ def verify_debt(cpf: str, date_birth: str) -> list[dict]:
         cs.valor_vencido,
         cs.valor_multa,
         cs.valor_juros,
-        cs.produto,
+        cs.produto
+    FROM 
+        customers as cs
+    WHERE 
+        cs.cpf_cnpj = ? AND cs.data_nascimento = ?
+    """
+    cursor.execute(query, (cpf, date))
+    rows = cursor.fetchall()
+    column_names = [column[0] for column in cursor.description]
+    results = [dict(zip(column_names, row)) for row in rows]
+
+    cursor.close()
+    conn.close()
+
+    return results
+
+
+@tool
+def verify_plots(cpf: str, date_birth: str) -> list[dict]:
+    "Tool to get information from plots debt."
+    date = datetime.strptime(date_birth, "%d/%m/%Y")
+    conn = sqlite3.connect(DATABASE)
+    cursor = conn.cursor()
+
+    query = """
+    SELECT 
+        cs.cpf_cnpj,
+        cs.nome,
+        cs.data_nascimento,
         po.valor_entrada,
         po.valor_parcela,
         po.valor_desconto,
