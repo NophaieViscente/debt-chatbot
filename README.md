@@ -16,9 +16,12 @@ Introduction and Greeting: The chatbot starts by introducing itself and welcomin
 *Additional Assistance*: If the CPF or date of birth is invalid, the bot politely asks if it can assist with anything else.
 
 ## Technologies Used
-*Python*: The core programming language used to develop the chatbot.
-*Langchain*: Utilized for create prompts and tools.
-*Langgraph: Utilized for manage flow and state conversation.
+*Python*: The core programming language used to develop the chatbot.  
+
+*Langchain*: Utilized for create prompts and tools.  
+
+*Langgraph: Utilized for manage flow and state conversation.  
+
 *SQLite*: A lightweight database used for storing and retrieving customer data securely.
 
 ## Project Structure
