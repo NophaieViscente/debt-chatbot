@@ -20,7 +20,7 @@ Introduction and Greeting: The chatbot starts by introducing itself and welcomin
 
 *Langchain*: Utilized for create prompts and tools.  
 
-*Langgraph: Utilized for manage flow and state conversation.  
+*Langgraph*: Utilized for manage flow and state conversation.  
 
 *SQLite*: A lightweight database used for storing and retrieving customer data securely.
 
